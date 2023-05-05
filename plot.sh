@@ -5,6 +5,8 @@
 #
 
 gnuplot --persist <<EOF
-plot "result.dat" u 1:2 w lp lw 2 title "uh", "result.dat" u 1:3 w l lw 2title "uexact"
+
+plot "result.dat" u 1:2 w lp lw 2 title "uh", "result.dat" u 1:4 w l lw 2title "uexact"
+
 pause -1
 EOF
